@@ -64,12 +64,10 @@
 		<imagetarget id='FruitIntro' src='targets/FruitIntro.png'></imagetarget>
 		<imagetarget id='Prison1' src='targets/Prison1.jpg'></imagetarget>
 		<imagetarget id='prison2' src='targets/prison2.jpg'></imagetarget>
+		<imagetarget id='Prison3' src='targets/Prison3.jpg'></imagetarget>
+		<imagetarget id='Prison5' src='targets/Prison5.jpg'></imagetarget>
+		<imagetarget id='Prison4' src='targets/Prison4.jpg'></imagetarget>
 		<imagetarget id='marker_mon01' src='targets/marker_mon01.png'></imagetarget>
-		<imagetarget id='marker_mon02' src='targets/marker_mon02.png'></imagetarget>
-		<imagetarget id='marker_mon03' src='targets/marker_mon03.png'></imagetarget>
-		<imagetarget id='marker_mon04' src='targets/marker_mon04.png'></imagetarget>
-		<imagetarget id='marker_mon05' src='targets/marker_mon05.png'></imagetarget>
-		<imagetarget id='marker_mon06' src='targets/marker_mon06.png'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <div id="startARDiv" class="ctaDiv">
@@ -126,7 +124,7 @@
         });;
         
     </script>
-    <script src="Build/Builds.loader.js"></script>
+    <script src="Build/_Build.loader.js"></script>
     <script>
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
@@ -138,9 +136,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/Builds.data",
-                    frameworkUrl: "Build/Builds.framework.js",
-                    codeUrl: "Build/Builds.wasm",
+                    dataUrl: "Build/_Build.data",
+                    frameworkUrl: "Build/_Build.framework.js",
+                    codeUrl: "Build/_Build.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "SchoolAR",
